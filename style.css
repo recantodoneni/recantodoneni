@@ -1,0 +1,104 @@
+@font-face {
+    font-family: sora;
+    src: url("../Sora/Sora-VariableFont_wght.ttf");
+}
+
+body {
+    padding: 10px;
+    margin: 0;
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sora;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+.container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+    height: 100vh;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.header {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.border {
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
+    height: 200px;
+    width: 200px;
+    display: flex;
+}
+
+.border img {
+    height: 150px;
+    width: 150px;
+    align-self: center;
+    margin: auto;
+}
+
+
+.header h1 {
+    align-self: center;
+}
+
+.header p {
+    color: white;
+}   
+
+.links{
+    width: 400px;
+    margin: 0 auto;
+}
+
+
+
+.links ul {
+    padding: 10px;
+    margin: 5px 0 5px 0;
+    padding: 0;
+
+}
+
+.links ul li {
+    margin: 15px 0 15px 0;
+    background: linear-gradient(#5578BA , #40A376);
+    padding: 25px;
+    border-radius: 30px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+.links ul li img {
+    margin-right: 5px;
+}
+
+.footer {
+    width: 400px;
+    margin: 0 auto;
+    
+}
+
+.footer p {
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+}
