@@ -58,7 +58,12 @@ ul {
 
 .header h1 {
     align-self: center;
-    margin: 25px 0 15px 0;
+    margin: 20px 0 0 0;
+}
+
+.header h3 {
+    align-self: center;
+    margin-bottom: 5px;
 }
 
 .header p {
