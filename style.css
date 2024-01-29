@@ -3,6 +3,10 @@
     src: url("Sora-VariableFont_wght.ttf");
 }
 
+a {
+    text-decoration: none;
+}
+
 :root {
     --primary-color: #5578BA;
 }
@@ -74,7 +78,8 @@ ul {
     padding: 0;
 }
 
-.links ul li {
+.links ul li a {
+    color: white;
     margin: 15px 0 15px 0;
     background: linear-gradient( var(--primary-color), var(--sec-color));
     padding: 15px;
@@ -86,7 +91,7 @@ ul {
     font-size: 18px;
 }
 
-.links ul li:hover {
+.links ul li a:hover {
     background: linear-gradient( var(--sec-color), var(--primary-color));
 }
 
@@ -108,6 +113,8 @@ ul {
     display: block;
 }
 
+/* Responsivo */
+
 @media only screen and (max-width: 600px) {
     .header h1 {
         font-size: 25px;
@@ -126,18 +133,19 @@ ul {
         width: 300px;
     }
 
-    .links ul li {
+    .links ul li a{
       padding: 15px;
       font-size: 15px;
-
     }
 
     .links ul li img {
         height: 15px;
     }
 
+
     .footer p {
         font-size: 8px;
+
     }
 
   }
