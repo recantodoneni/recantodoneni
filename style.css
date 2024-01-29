@@ -113,6 +113,12 @@ ul {
     display: block;
 }
 
+.footer p a {
+    font-weight: bold;
+    color: gray;
+}
+
+
 /* Responsivo */
 
 @media only screen and (max-width: 600px) {
@@ -145,7 +151,6 @@ ul {
 
     .footer p {
         font-size: 8px;
-
     }
 
   }
