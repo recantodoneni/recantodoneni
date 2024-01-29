@@ -73,14 +73,12 @@ ul {
 
 .links{
     width: 400px;
+    margin: -20px 0 -25px 0;
 }
-
-
 
 .links ul {
     padding: 10px;
     margin: 2px 0 5px 0;
-    padding: 0;
 }
 
 .links ul li {
@@ -138,6 +136,9 @@ ul {
     
     .header h1 {
         font-size: 25px;
+    }
+    .header h3 {
+        font-size: 15px;
     }
     
     .header p {
