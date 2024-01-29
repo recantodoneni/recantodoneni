@@ -1,6 +1,6 @@
 @font-face {
     font-family: sora;
-    src: url("Sora-VariableFont_wght.ttf");
+    src: url("../Sora-VariableFont_wght.ttf");
 }
 
 a {
@@ -16,7 +16,7 @@ a {
 }
 
 body {
-    background-image: url("background.jpg");
+    background-image: url("../img/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: sora;
