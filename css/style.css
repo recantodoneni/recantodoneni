@@ -59,6 +59,8 @@ ul {
 .header h1 {
     align-self: center;
     margin: 20px 0 0 0;
+    border-bottom: solid 1px var(--sec-color);
+    padding: 0 0 10px 0;
 }
 
 .header h3 {

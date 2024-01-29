@@ -11,7 +11,7 @@ let lo = document.getElementById("loc");
 // Variável que possui o link do aibnb
 let linkAB = '<a href="https://www.airbnb.com/h/recantodoneni" target="_blank"><img src="img/airbnb.png" alt="airbnb">Faça a sua reserva</a>';
 // Variável que possui o link do whatsapp
-let linkW = '<a href="https://wa.me/5551992887129/?" target="_blank"><img src="img/whatsapp.png" alt="whatsapp">Fale conosco</a>';
+let linkW = '<a href="https://wa.me/555198328660/?" target="_blank"><img src="img/whatsapp.png" alt="whatsapp">Fale conosco</a>';
 // Variável que chama a data
 let local = '<a href="https://maps.app.goo.gl/uqn7LPWrEzZ5YzVFA" target="_blank"><img src="img/localizacao.png" alt="">Localização</a>';
 let point = '<a href="https://www.santamariadoherval.rs.gov.br/index.php/turismo/pontos-turisticos/570" target="_blank"><img src="img/camera.png" alt="">Pontos Turísticos</a>'
