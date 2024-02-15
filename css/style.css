@@ -37,7 +37,7 @@ body {
     align-items: center;
     justify-items: center;
     justify-content: center;
-    height: 120vh;
+    height: 115vh;
     padding: 10px;
 }
 
@@ -138,6 +138,7 @@ body {
 
 #co1 {
     display: none;
+    position: fixed;
     right: 0;
     left: 0;
     top: 0;
@@ -241,7 +242,7 @@ body {
     .container {
         padding: 20px;
         height: 80vh;
-        margin-top: 90px;
+        margin-top: 80px;
     }
 
     .header {
