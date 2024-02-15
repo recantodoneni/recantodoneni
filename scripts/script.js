@@ -4,6 +4,7 @@ let cl = document.getElementById("close")
 
 comer.addEventListener("click", function comer() { 
     c123.style.display = "flex"
+    c123.style.position = "fixed"
 })
 
 cl.addEventListener("click", function close(){
