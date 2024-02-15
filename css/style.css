@@ -18,7 +18,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     font-family: sora;
-    height: 105vh;
+    height: 120vh;
 }
 /* Var cores */
 
@@ -30,8 +30,6 @@ body {
     --sec-color: #40A376;
 }
 
-
-
 .container {
     color: white;
     display: flex;
@@ -39,7 +37,7 @@ body {
     align-items: center;
     justify-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 120vh;
     padding: 10px;
 }
 
@@ -142,7 +140,7 @@ body {
     display: none;
     right: 0;
     left: 0;
-    top: -50px;
+    top: 0;
     align-items: center;
     justify-content: center;
     background-color: rgba(0,0,0,0.5);
@@ -235,14 +233,19 @@ body {
 
 /* Responsivo */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 750px) {
+   body {
+    height: 95vh;
+   }
+   
     .container {
         padding: 20px;
-        height: 100vh;
+        height: 80vh;
+        margin-top: 90px;
     }
 
     .header {
-        height: 90vh;
+        height: 80vh;
         width: 300px;
         }
     
@@ -255,7 +258,6 @@ body {
     
     .header p {
         font-size: 12px;
-        align-self: flex-start;
     }
     
     .header img {
@@ -265,7 +267,6 @@ body {
     
     .links {
         width: 300px;
-        margin-top: -500px;
     }
 
 
@@ -284,40 +285,54 @@ body {
     }
 /* Div onde comer */
     #co1 {
+        background-color: rgba(0,0,0,0.5);
+        padding: 0;
         height: 100%;
-        padding: 50px;
-        top: 20px;
-        background-color: rgba(0,0,0,0.0);
+        width: 100%;
     }
 
     .back {  
-        box-sizing: border-box;
+        margin: 0 auto;
         align-items: center;
-        height: 100%;
+        width: 80%;
+        height: 90vh;
+        padding: 80px 0;
+    }
 
+    .back ul li {
+        height: 80px;
+        width: 250px;
     }
 
     .back h1 {
         font-size: 20px;
+        margin: 0;
     }
 
+    .back h2 {
+        width: 300px;
+        margin: 10px 0 -20px 0;
+    }
     .back ul {
         grid-template-columns: 2fr;
-        width: 30vh;
+
+        
     }
 
     .back ul li p {
-        padding: 0;
-        margin: 15px 0 0 0;
+        padding-bottom: 2px;
+        margin: 10px 0 0 0;
         font-size: 15px;
+        
     }
 
     .back ul li a {
         font-size: 13px;
+        margin: 0 auto;
     }
 
     #close  {
-        margin: 10px auto;
+        margin: 0 auto;
         padding: 10px;
     }
 
