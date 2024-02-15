@@ -1,18 +1,26 @@
-body {
-    font-style: none;
-    box-sizing: border-box;
-    text-decoration: none;
-   
-}
-
 @font-face {
     font-family: sora;
     src: url("../assets/Sora-VariableFont_wght.ttf");
 }
 
-a {
+* {
     text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
 }
+
+ul li {
+    margin: 0;
+}
+
+body {
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sora;
+    height: 105vh;
+}
+/* Var cores */
 
 :root {
     --primary-color: #5578BA;
@@ -22,22 +30,7 @@ a {
     --sec-color: #40A376;
 }
 
-body {
-    background-image: url("../img/background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: sora;
 
-}
-
-ul {
-    list-style-type: none;
-  }
-
-ul li {
-    margin: 0;
-    list-style: none;
-}
 
 .container {
     color: white;
@@ -46,13 +39,11 @@ ul li {
     align-items: center;
     justify-items: center;
     justify-content: center;
-    padding: 40px;
-    height: 130vh;
-    margin-top: 20px;
+    height: 100vh;
+    padding: 10px;
 }
 
 .header {
-    height: 100vh;
     width: 400px; 
     display: flex;  
     flex-direction: column;
@@ -60,8 +51,8 @@ ul li {
 
 
 .header img {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     border-radius: 20%;
     background-color: white;
     align-self: center; 
@@ -76,71 +67,55 @@ ul li {
     margin: 20px 0 0 0;
     border-bottom: solid 1px var(--sec-color);
     padding: 0 0 10px 0;
+    font-size: 25px;
 }
 
 .header h3 {
     align-self: center;
     margin-bottom: 5px;
+    font-size: 20px;
 }
 
 .header p {
     color: white;
     text-align: center;
+    font-size: 14px;
 }   
 
 .links{
     width: 400px;
-    margin: -20px 0 -25px 0;
 }
 
 .links ul {
     padding: 10px;
-    margin: 2px 0 5px 0;
+    margin: -20px 0 -20px 0;
 }
 
 .links ul li {
     margin: 2px 0 2px 0;
 }
 
-.links ul li a {
+.links ul li a, .links ul li p {
     color: white;
-    margin: 15px 0 15px 0;
+    margin: 10px 0 10px 0;
     background: linear-gradient( var(--primary-color), var(--sec-color));
-    padding: 15px;
+    padding: 12px;
     border-radius: 30px;
     font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 15px;
+    cursor: pointer;
 }
 
-.links ul li a:hover {
+.links ul li a:hover, .links ul li p:hover {
     background: linear-gradient( var(--sec-color), var(--primary-color));
 }
 
 .links ul li img {
     margin-right: 5px;
-    height: 22px;
-}
-
-.links ul li p {
-    display: inline-block;
-    color: white;
-    margin: 15px 0 15px 0;
-    background: linear-gradient( var(--primary-color), var(--sec-color));
-    padding: 15px;
-    border-radius: 30px;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    cursor: pointer;
-}
-
-.links ul li p:hover {
-    background: linear-gradient( var(--sec-color), var(--primary-color));
+    height: 18px;
 }
 
 .footer {
@@ -161,19 +136,17 @@ ul li {
     color: gray;
 }
 
-/* Janela "Onde comer" */
+/* Div "Onde comer" */
 
 #co1 {
     display: none;
-    position: absolute;
     right: 0;
     left: 0;
-    top: 0;
-    bottom: 0;
+    top: -50px;
     align-items: center;
     justify-content: center;
     background-color: rgba(0,0,0,0.5);
-    height: 130vh;
+    height: 100vh;
     padding: 40px;
 }
 
@@ -198,6 +171,11 @@ ul li {
     border-bottom: 1px solid var(--sec-color);
     padding: 15px 0;
     margin-top: -30px;
+}
+
+.back h2 {
+    color: white;
+    font-size: 12px;
 }
 
 .back ul {
@@ -247,7 +225,7 @@ ul li {
     padding: 15px;
     font-size: 15px;
     border-radius: 10px;
-    width: 50px;
+    width: 80px;
     margin: 0 auto;
 }
 
@@ -255,21 +233,21 @@ ul li {
     background: linear-gradient( var(--sec-color), var(--primary-color));
 }
 
-
 /* Responsivo */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .container {
+        padding: 20px;
         height: 100vh;
-        padding: 80px;
     }
 
     .header {
+        height: 90vh;
         width: 300px;
         }
     
     .header h1 {
-        font-size: 25px;
+        font-size: 22px;
     }
     .header h3 {
         font-size: 15px;
@@ -277,55 +255,74 @@ ul li {
     
     .header p {
         font-size: 12px;
-        text-align: justify;
         align-self: flex-start;
     }
     
     .header img {
-        height: 150px;
-        width: 150px;
+        height: 120px;
+        width: 120px;
     }
     
     .links {
         width: 300px;
+        margin-top: -500px;
     }
 
-    .links ul li {
-        margin: -5px 0;
-    }
 
     .links ul li a, .links ul li p{
-      padding: 15px;
-      font-size: 15px;
+      padding: 10px;
+      font-size: 14px;
     }
 
     .links ul li img {
-        height: 15px;
+        height: 14px;
     }
 
 
     .footer p {
         font-size: 8px;
     }
-
+/* Div onde comer */
     #co1 {
-        height: 110vh;
+        height: 100%;
+        padding: 50px;
+        top: 20px;
+        background-color: rgba(0,0,0,0.0);
     }
 
     .back {  
-        height: 80vh;
+        box-sizing: border-box;
+        align-items: center;
+        height: 100%;
+
     }
 
     .back h1 {
-        margin-top: 50px;
+        font-size: 20px;
     }
 
     .back ul {
         grid-template-columns: 2fr;
+        width: 30vh;
+    }
+
+    .back ul li p {
+        padding: 0;
+        margin: 15px 0 0 0;
+        font-size: 15px;
+    }
+
+    .back ul li a {
+        font-size: 13px;
     }
 
     #close  {
         margin: 10px auto;
+        padding: 10px;
+    }
+
+    #close p {
+        font-size: 13px;
     }
   }
   
