@@ -1,20 +1,31 @@
-let comer = document.getElementById("co")
-let c123 = document.getElementById("co1") 
-let cl = document.getElementById("close")
+let ondeComer = document.querySelector(".ondeComer") 
 
-comer.addEventListener("click", function comer() { 
-    c123.style.display = "flex"
-})
+function activeCo(seletor) {
+    const element = document.querySelector(seletor);
+    this.ativo = function(classe) {
+        element.addEventListener('click',() =>  { ondeComer.classList.add(classe)})
+    }
+}
 
-cl.addEventListener("click", function close(){
-    c123.style.display = "none"
-})
+function inactiveCO(seletor) {
+    const element = document.querySelector(seletor)
+    this.inativo = function(classe) {
+    element.addEventListener('click',() => { ondeComer.classList.remove(classe)})
+} 
+}
 
-let d = new Date()
+const comer1 = new activeCo('#co');
+const close1 = new inactiveCO('#close')
+comer1.ativo('ativo');
+close1.inativo('ativo');
+
+
+const d = new Date()
 // Variável que concatena o ano com o texto do rodapé
-let recanto = `Recanto do Neni. ` + d.getFullYear() + ` Todos os direitos reservados©.`;
-
-// Insere as informações no html
+const recanto = `Recanto do Neni. ` + d.getFullYear() + ` Todos os direitos reservados©.`;
 
 // Texto + ano rodapé
 date.innerHTML = recanto;
+
+
+
