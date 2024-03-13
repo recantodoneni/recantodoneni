@@ -2,7 +2,7 @@
 
 Página de links do recanto do neni similar so linktree para o uso no instagram.
 
-[Recanto do Neni](https://jcblank.github.io/recanto_do_neni/)
+[Recanto do Neni](https://recantodoneni.github.io/recantodoneni/)
 @recanto_do_neni
 
 Criado por João Carlos Blankenheim Rodrigues
