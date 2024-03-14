@@ -49,29 +49,19 @@ body {
 
 
 .header img {
-    height: 150px;
-    width: 150px;
-    border-radius: 20%;
+    height: 180px;
+    width: 180px;
+    border-radius: 30px;
     background-color: white;
     align-self: center; 
     padding: 10px;
     background-size: cover;
-    border: 3px solid var(--sec-color);
-}
-
-
-.header h1 {
-    align-self: center;
-    margin: 20px 0 0 0;
-    border-bottom: solid 1px var(--sec-color);
-    padding: 0 0 10px 0;
-    font-size: 25px;
 }
 
 .header h3 {
     align-self: center;
     margin-bottom: 5px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .header p {
@@ -95,8 +85,7 @@ body {
 
 .links ul li a, .links ul li p {
     color: white;
-
-    margin: 10px 0 10px 0;
+    margin: 12px 0;
     background-color: var(--sec-color);
     padding: 12px;
     border-radius: 30px;
@@ -123,14 +112,13 @@ body {
 .footer {
     width: 400px;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .footer p {
     text-align: center;
     font-size: 10px;
     color: gray;
-    display: block;
 }
 
 .footer p a {
@@ -183,7 +171,6 @@ body {
         width: 100vh;
         background-color: rgba(0,0,0,0.8);
         text-align: center;
-        border: 1px solid var(--sec-color);
         border-radius: 5px;
         display: flex;
         justify-content: center;
@@ -215,7 +202,6 @@ body {
 
 .back ul li {
     margin: 10px;
-    border: 1px solid white;
     border-radius: 10px;
     padding: 5px;
     background-color: var(--sec-color)

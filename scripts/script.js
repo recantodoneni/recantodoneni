@@ -3,21 +3,14 @@ let ondeComer = document.querySelector(".ondeComer")
 function activeCo(seletor) {
     const element = document.querySelector(seletor);
     this.ativo = function(classe) {
-        element.addEventListener('click',() =>  { ondeComer.classList.add(classe)})
+        element.addEventListener('click',() =>  { ondeComer.classList.toggle(classe)})
     }
 }
 
-function inactiveCO(seletor) {
-    const element = document.querySelector(seletor)
-    this.inativo = function(classe) {
-    element.addEventListener('click',() => { ondeComer.classList.remove(classe)})
-} 
-}
-
 const comer1 = new activeCo('#co');
-const close1 = new inactiveCO('#close')
+const close1 = new activeCo('#close')
 comer1.ativo('ativo');
-close1.inativo('ativo');
+close1.ativo('ativo');
 
 
 const d = new Date()
