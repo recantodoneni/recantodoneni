@@ -95,7 +95,6 @@ body {
 
 .links ul li a, .links ul li p {
     color: white;
-
     margin: 10px 0 10px 0;
     background-color: var(--sec-color);
     padding: 12px;
@@ -179,62 +178,72 @@ body {
 }
 
 .back {  
-        height: 80vh;
-        width: 100vh;
         background-color: rgba(0,0,0,0.8);
-        text-align: center;
-        border: 1px solid var(--sec-color);
-        border-radius: 5px;
+        border-radius: 30px;
         display: flex;
         justify-content: center;
         flex-direction: column;
         flex-wrap: nowrap;
-        padding: 0 40px;
-        box-sizing: border-box;
+        padding: 50px;
     }
 
 .back h1{
     color: white;
     border-bottom: 1px solid var(--sec-color);
-    padding: 15px 0;
-    margin-top: -30px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px 0;
 }
 
 .back h2 {
     color: white;
-    font-size: 12px;
+    font-size: 15px;
+    margin-top: 30px;
+    text-align: center;
 }
 
 .back ul {
     display: grid;
     grid-template-columns: 2fr 2fr;
+    grid-gap: 2px;
     padding: 0;
-    margin-top: 30px;
     border-radius: 5px;
+    
 }
 
 .back ul li {
     margin: 10px;
-    border: 1px solid white;
-    border-radius: 10px;
-    padding: 5px;
-    background-color: var(--sec-color)
+    border-radius: 30px;
+    background-color: var(--primary-color);
+    text-align: center;
+    height: 180px;
 }
 
 .back ul li a{
     color: white;
-    font-size: 15px;
-    margin: 5px;
-    display: inline-block;
+    font-size: 13px;
+    text-align: center;
+    margin: 50px 20px; 
     padding: 10px;
+    background-color: var(--sec-color);
+    transition-property: background-color, text-shadow;
+    transition-duration: 700ms;
+    border-radius: 30px;
+    height: auto;
+    width: auto;
 }
 
 .back ul li p {
     color: white;
-    margin-bottom: 2px;
-    padding: 5px 0;
-    font-size: 18px;
-    border-bottom: solid 1px black;
+    font-size: 15px;
+    margin: 20px 0;
+    padding: 2px;
+}
+
+.back ul li p:nth-child(2) {
+    font-size: 12px;
+    text-align: justify;
+    padding: 0 10px;
 }
 
 .back ul li a:hover {
@@ -244,7 +253,9 @@ body {
 }
 
 #close {
-    margin-top: 50px; 
+    margin-top: 30px; 
+    width: 300px;
+    margin: 20px auto;
 }
 
 #close p {
@@ -255,9 +266,9 @@ body {
     cursor: pointer;
     padding: 15px;
     font-size: 15px;
-    border-radius: 10px;
-    width: 80px;
+    border-radius: 30px;
     margin: 0 auto;
+    text-align: center;
 }
 
 #close p:hover {
@@ -266,7 +277,7 @@ body {
 
 /* Responsivo */
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
    body {
     height: 95vh;
    }
@@ -317,64 +328,61 @@ body {
         font-size: 8px;
     }
 /* Div onde comer */
-    #co1 {
+    .ondeComer {
         background-color: rgba(0,0,0,0.5);
-        padding: 0;
-        height: 100%;
-        width: 100%;
+
     }
 
-    #co1.ativo {
-        display: block;
-    }
 
     .back {  
-        margin: 0 auto;
         align-items: center;
-        width: 80%;
-        height: 90vh;
-        padding: 80px 0;
+        height: auto;
     }
 
     .back ul li {
-        height: 80px;
-        width: 250px;
+        height: auto;
+        width: 400px;
     }
 
     .back h1 {
-        font-size: 20px;
-        margin: 0;
+        font-size: 18px;
+        margin: 10px 0;
     }
 
     .back h2 {
         width: 300px;
-        margin: 10px 0 -20px 0;
+        font-size: 12px;
+        margin: 5px 0;
     }
     .back ul {
         grid-template-columns: 2fr;
-
-        
+        height: auto;
+        width: auto;
+        margin-top: 5px;
     }
-
     .back ul li p {
         padding-bottom: 2px;
-        margin: 10px 0 0 0;
-        font-size: 15px;
-        
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .back ul li p:nth-child(2) {
+        font-size: 10px;
     }
 
     .back ul li a {
-        font-size: 13px;
+        font-size: 12px;
         margin: 0 auto;
     }
 
     #close  {
-        margin: 0 auto;
         padding: 10px;
+        margin-top: 10px;
     }
 
     #close p {
         font-size: 13px;
+        margin-top: -30px;
     }
   }
   
