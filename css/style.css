@@ -49,29 +49,19 @@ body {
 
 
 .header img {
-    height: 150px;
-    width: 150px;
-    border-radius: 20%;
+    height: 180px;
+    width: 180px;
+    border-radius: 30px;
     background-color: white;
     align-self: center; 
     padding: 10px;
     background-size: cover;
-    border: 3px solid var(--sec-color);
-}
-
-
-.header h1 {
-    align-self: center;
-    margin: 20px 0 0 0;
-    border-bottom: solid 1px var(--sec-color);
-    padding: 0 0 10px 0;
-    font-size: 25px;
 }
 
 .header h3 {
     align-self: center;
     margin-bottom: 5px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .header p {
@@ -95,7 +85,7 @@ body {
 
 .links ul li a, .links ul li p {
     color: white;
-    margin: 10px 0 10px 0;
+    margin: 12px 0;
     background-color: var(--sec-color);
     padding: 12px;
     border-radius: 30px;
@@ -122,14 +112,13 @@ body {
 .footer {
     width: 400px;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .footer p {
     text-align: center;
     font-size: 10px;
     color: gray;
-    display: block;
 }
 
 .footer p a {
@@ -178,72 +167,60 @@ body {
 }
 
 .back {  
+        height: 80vh;
+        width: 100vh;
         background-color: rgba(0,0,0,0.8);
-        border-radius: 30px;
+        text-align: center;
+        border-radius: 5px;
         display: flex;
         justify-content: center;
         flex-direction: column;
         flex-wrap: nowrap;
-        padding: 50px;
+        padding: 0 40px;
+        box-sizing: border-box;
     }
 
 .back h1{
     color: white;
     border-bottom: 1px solid var(--sec-color);
-    text-align: center;
-    margin: 0 auto;
-    padding: 5px 0;
+    padding: 15px 0;
+    margin-top: -30px;
 }
 
 .back h2 {
     color: white;
-    font-size: 15px;
-    margin-top: 30px;
-    text-align: center;
+    font-size: 12px;
 }
 
 .back ul {
     display: grid;
     grid-template-columns: 2fr 2fr;
-    grid-gap: 2px;
     padding: 0;
+    margin-top: 30px;
     border-radius: 5px;
-    
 }
 
 .back ul li {
     margin: 10px;
-    border-radius: 30px;
-    background-color: var(--primary-color);
-    text-align: center;
-    height: 180px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: var(--sec-color)
 }
 
 .back ul li a{
     color: white;
-    font-size: 13px;
-    text-align: center;
-    margin: 50px 20px; 
+    font-size: 15px;
+    margin: 5px;
+    display: inline-block;
     padding: 10px;
-    background-color: var(--sec-color);
-    transition-property: background-color, text-shadow;
-    transition-duration: 700ms;
-    border-radius: 30px;
-    height: auto;
-    width: auto;
 }
 
 .back ul li p {
     color: white;
-    font-size: 15px;
-    margin: 20px 0;
-    padding: 2px;
-}
-
-.back ul li p:nth-child(2) {
-    font-size: 12px;
-    text-align: justify;
-    padding: 0 10px;
+    margin-bottom: 2px;
+    padding: 5px 0;
+    font-size: 18px;
+    border-bottom: solid 1px black;
 }
 
 .back ul li a:hover {
@@ -253,9 +230,7 @@ body {
 }
 
 #close {
-    margin-top: 30px; 
-    width: 300px;
-    margin: 20px auto;
+    margin-top: 50px; 
 }
 
 #close p {
@@ -266,9 +241,9 @@ body {
     cursor: pointer;
     padding: 15px;
     font-size: 15px;
-    border-radius: 30px;
+    border-radius: 10px;
+    width: 80px;
     margin: 0 auto;
-    text-align: center;
 }
 
 #close p:hover {
@@ -277,7 +252,7 @@ body {
 
 /* Responsivo */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 750px) {
    body {
     height: 95vh;
    }
@@ -328,61 +303,64 @@ body {
         font-size: 8px;
     }
 /* Div onde comer */
-    .ondeComer {
+    #co1 {
         background-color: rgba(0,0,0,0.5);
-
+        padding: 0;
+        height: 100%;
+        width: 100%;
     }
 
+    #co1.ativo {
+        display: block;
+    }
 
     .back {  
+        margin: 0 auto;
         align-items: center;
-        height: auto;
+        width: 80%;
+        height: 90vh;
+        padding: 80px 0;
     }
 
     .back ul li {
-        height: auto;
-        width: 400px;
+        height: 80px;
+        width: 250px;
     }
 
     .back h1 {
-        font-size: 18px;
-        margin: 10px 0;
+        font-size: 20px;
+        margin: 0;
     }
 
     .back h2 {
         width: 300px;
-        font-size: 12px;
-        margin: 5px 0;
+        margin: 10px 0 -20px 0;
     }
     .back ul {
         grid-template-columns: 2fr;
-        height: auto;
-        width: auto;
-        margin-top: 5px;
-    }
-    .back ul li p {
-        padding-bottom: 2px;
-        text-align: center;
-        font-size: 12px;
+
+        
     }
 
-    .back ul li p:nth-child(2) {
-        font-size: 10px;
+    .back ul li p {
+        padding-bottom: 2px;
+        margin: 10px 0 0 0;
+        font-size: 15px;
+        
     }
 
     .back ul li a {
-        font-size: 12px;
+        font-size: 13px;
         margin: 0 auto;
     }
 
     #close  {
+        margin: 0 auto;
         padding: 10px;
-        margin-top: 10px;
     }
 
     #close p {
         font-size: 13px;
-        margin-top: -30px;
     }
   }
   
