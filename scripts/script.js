@@ -15,7 +15,7 @@ close1.ativo('ativo');
 
 const d = new Date()
 // Variável que concatena o ano com o texto do rodapé
-const recanto = `Recanto do Neni. ` + d.getFullYear() + ` Todos os direitos reservados©.`;
+const recanto = `Recanto do Neni. ` + d.getFullYear() + ` Todos os direitos reservados©.<br> Desenvolvido por <a href="https://github.com/jcblank" target="_blank">João Carlos Rodrigues.</a>`;
 
 // Texto + ano rodapé
 date.innerHTML = recanto;
