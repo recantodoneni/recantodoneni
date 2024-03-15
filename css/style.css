@@ -114,7 +114,7 @@ body {
 .footer {
     width: 400px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .footer p {
@@ -291,7 +291,7 @@ body {
     .links ul li img {
         height: 13px;
     }
-
+    
     .footer p {
         font-size: 9px;
     }
