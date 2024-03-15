@@ -47,6 +47,7 @@ body {
     width: 400px; 
     display: flex;  
     flex-direction: column;
+    margin-top: -30px;
 }
 
 
@@ -183,7 +184,6 @@ body {
 
 .back h1{
     color: white;
-    border-bottom: 1px solid var(--sec-color);
     padding: 15px 0;
     margin-top: -30px;
 }
@@ -291,7 +291,7 @@ body {
     .links ul li img {
         height: 13px;
     }
-    
+
     .footer p {
         font-size: 9px;
     }
