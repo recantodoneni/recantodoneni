@@ -14,11 +14,11 @@ ul li {
 }
 
 body {
-    background-image: url("../img/background.jpg");
+    background-image: url("../img/20231125_105736.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     font-family: sora;
-    height: 120vh;
 }
 /* Var cores */
 
@@ -37,14 +37,17 @@ body {
     align-items: center;
     justify-items: center;
     justify-content: center;
-    height: 115vh;
-    padding: 10px;
+    height: 95vh;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 30px;
+    margin: 10px;
 }
 
 .header {
     width: 400px; 
     display: flex;  
     flex-direction: column;
+    margin-top: -30px;
 }
 
 
@@ -112,18 +115,18 @@ body {
 .footer {
     width: 400px;
     text-align: center;
-    margin-top: 5px;
+    margin-top: 20px;
 }
 
 .footer p {
     text-align: center;
     font-size: 10px;
-    color: gray;
+    color: white;
 }
 
 .footer p a {
     font-weight: bold;
-    color: gray;
+    color: white;
     transition-property: color;
     transition-duration: 700ms;
 }
@@ -168,7 +171,6 @@ body {
 
 .back {  
         height: 80vh;
-        width: 100vh;
         background-color: rgba(0,0,0,0.8);
         text-align: center;
         border-radius: 5px;
@@ -182,7 +184,6 @@ body {
 
 .back h1{
     color: white;
-    border-bottom: 1px solid var(--sec-color);
     padding: 15px 0;
     margin-top: -30px;
 }
@@ -193,34 +194,31 @@ body {
 }
 
 .back ul {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
     padding: 0;
-    margin-top: 30px;
+    width: 300px;
     border-radius: 5px;
+    margin: 0 auto;
 }
 
 .back ul li {
-    margin: 10px;
-    border-radius: 10px;
-    padding: 5px;
-    background-color: var(--sec-color)
+    margin: 10px auto;
+    background-color: var(--sec-color);
+    border-radius:30px;
+    height: 70px;
+    padding: 1px;
 }
 
 .back ul li a{
     color: white;
-    font-size: 15px;
-    margin: 5px;
-    display: inline-block;
-    padding: 10px;
+    font-size: 14px;
+    padding: 5px;
 }
 
 .back ul li p {
     color: white;
     margin-bottom: 2px;
-    padding: 5px 0;
-    font-size: 18px;
-    border-bottom: solid 1px black;
+    font-size: 17px;
+    text-shadow: 1px 1px 1px rgb(54, 54, 54);
 }
 
 .back ul li a:hover {
@@ -231,6 +229,8 @@ body {
 
 #close {
     margin-top: 50px; 
+    width: 100px;
+    margin: 0 auto;
 }
 
 #close p {
@@ -241,9 +241,7 @@ body {
     cursor: pointer;
     padding: 15px;
     font-size: 15px;
-    border-radius: 10px;
-    width: 80px;
-    margin: 0 auto;
+    border-radius: 30px;
 }
 
 #close p:hover {
@@ -253,26 +251,22 @@ body {
 /* Responsivo */
 
 @media only screen and (max-width: 750px) {
-   body {
-    height: 95vh;
+   body { 
+    background-position: left; 
+    height: 100vh;
    }
-   
+
     .container {
-        padding: 20px;
-        height: 80vh;
-        margin-top: 80px;
+        height: 95vh;
     }
 
     .header {
-        height: 80vh;
+        
         width: 300px;
         }
     
-    .header h1 {
-        font-size: 22px;
-    }
     .header h3 {
-        font-size: 15px;
+        font-size: 14px;
     }
     
     .header p {
@@ -290,73 +284,60 @@ body {
 
 
     .links ul li a, .links ul li p{
-      padding: 10px;
+      padding: 18px;
       font-size: 14px;
+      margin: 8px 0;
     }
 
     .links ul li img {
-        height: 14px;
+        height: 13px;
     }
-
 
     .footer p {
-        font-size: 8px;
+        font-size: 9px;
     }
 /* Div onde comer */
-    #co1 {
-        background-color: rgba(0,0,0,0.5);
-        padding: 0;
-        height: 100%;
-        width: 100%;
-    }
-
-    #co1.ativo {
-        display: block;
-    }
-
     .back {  
-        margin: 0 auto;
         align-items: center;
-        width: 80%;
-        height: 90vh;
-        padding: 80px 0;
+        align-content: center;
+        margin: 0 auto;
+    }
+    
+    .back ul {
+        grid-template-columns: 2fr;
+        margin-bottom: -1px;
     }
 
     .back ul li {
-        height: 80px;
-        width: 250px;
+        box-sizing: border-box;
+        height: auto;
+        border-radius: 30px;
+        background-color: var(--sec-color)
     }
 
     .back h1 {
         font-size: 20px;
-        margin: 0;
     }
 
     .back h2 {
         width: 300px;
-        margin: 10px 0 -20px 0;
-    }
-    .back ul {
-        grid-template-columns: 2fr;
-
-        
+        margin: 30px 0;
     }
 
     .back ul li p {
-        padding-bottom: 2px;
-        margin: 10px 0 0 0;
         font-size: 15px;
+        margin-top: 2px;
         
     }
 
     .back ul li a {
         font-size: 13px;
-        margin: 0 auto;
+        text-shadow: 1px 1px 1px rgb(18, 18, 18);
     }
 
     #close  {
-        margin: 0 auto;
-        padding: 10px;
+        width: 300px;
+        margin-top: 25px;
     }
 
     #close p {
